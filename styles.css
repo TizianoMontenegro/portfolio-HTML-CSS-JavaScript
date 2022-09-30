@@ -1,0 +1,82 @@
+:root{
+	--primary-color: #37f;
+	--text-color: grey;
+	--bg-color: #edd;
+	--bg-card-color: #fee;
+	--trans: color .2s, background-color .3s ease-in-out;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: sans-serif;
+	transition: var(--trans);
+}
+body.dark{
+	--text-color: rgb(195, 195, 195);
+	--bg-color: #333;
+	--bg-card-color: #555;
+}
+
+/* HEADER */
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--bg-card-color);
+	padding: 0 10px;
+	height: 70px;
+	width: 100%;
+	transition: var(--trans);
+}
+#switches{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+#switches__img{
+	width: 1em;
+	margin-right: .5em;
+}
+#switches__text{
+	font-size: .7em;
+	font-weight: 600;
+}
+
+#colors{
+	width: 100px;
+	height: 20px;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: space-between;
+}
+.colors__item{
+	background-color: var(--primary-color);
+	width: 20px;
+	height: 100%;
+	border: 1px solid #333;
+}
+.colors__item--blue{
+	--primary-color: #37f;
+}
+.colors__item--red{
+	--primary-color: #f35;
+}
+.colors__item--green{
+	--primary-color: #7e3;
+}
+.colors__item--yellow{
+	--primary-color: #ff0;
+}
+
+.h1{
+	text-align: center;
+	color: var(--primary-color);
+	transition: var(--trans);
+
+}

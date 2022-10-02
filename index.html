@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 		<title>Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
-		<script src="https://kit.fontawesome.com/bf07a060cb.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header id="header">
@@ -24,23 +23,48 @@
 			<section class="column column--left">
 				<article class="card card--profile">
 					<div class="card__image--container">
-						<img src="images/me.png" alt="Me">
+						<img src="./images/me.png" alt="Me">
 					</div>
 					<div class="card__header">
 						<h2 class="card__title">Tiziano Montenegro</h2>
 						<p class="card__subtitle">Front End Developer</p>
 					</div>
 					<div class="card__link">
-						<i class="fas fa-envelope card__icon"></i>
+						<img src="./images/envelope.svg" alt="envelope" class="card__icon">
 						<a href="mailto:tizianomontenegro07@gmail.com">tizianomontenegro07@gmail.com</a>
 					</div>
 					<!-- <div class="card__link">
-						<div class="fas fa-phone card__icon"></div>
+						<img src="./images/phone.svg" alt="phone" class="card__icon">
 						<a href="tel:2245406563">+54-2245406563</a>
 					</div> -->
 					<p class="card__text">
 						Hola me llamo Tizi, comencé a programar a los 14 años (en septiembre del 2021) y desde que comencé me gustó mucho el poder crear mis propias herramientas y sigo aprendiendo más tecnologías. Mi lenguaje favorito es JavaScript.
 					</p>
+				</article>
+			</section>
+			<section class="column column--right">
+				<article class="card card--skills">
+					<h2 class="card__title">Skills</h2>
+					<div class="card__skills">
+						<img src="./images/html5.svg" alt="HTML5" class="card__tech--icon">
+						<p class="card__tech">HTML</p>
+						<div class="card__bar card__bar--60"></div>
+					</div>
+					<div class="card__skills">
+						<img src="./images/css3.svg" alt="CSS3" class="card__tech--icon">
+						<p class="card__tech">CSS</p>
+						<div class="card__bar card__bar--70"></div>
+					</div>
+					<div class="card__skills">
+						<img src="./images/js.svg" alt="JS" class="card__tech--icon">
+						<p class="card__tech">JavaScript</p>
+						<div class="card__bar card__bar--30"></div>
+					</div>
+					<div class="card__skills">
+						<img src="./images/jquery.svg" alt="JQuery" class="card__tech--icon">
+						<p class="card__tech">JQuery</p>
+						<div class="card__bar card__bar--40"></div>
+					</div>
 				</article>
 			</section>
 		</main>

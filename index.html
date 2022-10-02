@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 		<title>Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://kit.fontawesome.com/bf07a060cb.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header id="header">
@@ -13,13 +14,36 @@
 				<p id="switches__text">Dark Mode</p>
 			</div>
 			<div id="colors">
-				<div data-primarycolor="#37f" class="colors__item colors__item--blue"></div>
-				<div data-primarycolor="#f35" class="colors__item colors__item--red"></div>
-				<div data-primarycolor="#7e3" class="colors__item colors__item--green"></div>
-				<div data-primarycolor="#ff0" class="colors__item colors__item--yellow"></div>
+				<div data-primarycolor="#34f" class="colors__item colors__item--blue"></div>
+				<div data-primarycolor="#f00" class="colors__item colors__item--red"></div>
+				<div data-primarycolor="#0a0" class="colors__item colors__item--green"></div>
+				<div data-primarycolor="#a0f" class="colors__item colors__item--purple"></div>
 			</div>
 		</header>
-		<h1 class="h1"">Hola Mundo</h1>
+		<main id="main">
+			<section class="column column--left">
+				<article class="card card--profile">
+					<div class="card__image--container">
+						<img src="images/me.png" alt="Me">
+					</div>
+					<div class="card__header">
+						<h2 class="card__title">Tiziano Montenegro</h2>
+						<p class="card__subtitle">Front End Developer</p>
+					</div>
+					<div class="card__link">
+						<i class="fas fa-envelope card__icon"></i>
+						<a href="mailto:tizianomontenegro07@gmail.com">tizianomontenegro07@gmail.com</a>
+					</div>
+					<!-- <div class="card__link">
+						<div class="fas fa-phone card__icon"></div>
+						<a href="tel:2245406563">+54-2245406563</a>
+					</div> -->
+					<p class="card__text">
+						Hola me llamo Tizi, comencé a programar a los 14 años (en septiembre del 2021) y desde que comencé me gustó mucho el poder crear mis propias herramientas y sigo aprendiendo más tecnologías. Mi lenguaje favorito es JavaScript.
+					</p>
+				</article>
+			</section>
+		</main>
 		<script src="code.js"></script>
 	</body>
 </html>

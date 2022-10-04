@@ -42,6 +42,7 @@ img{
 	width: 100%;
 	transition: var(--trans);
 }
+/* dark / light */
 #switches{
 	display: flex;
 	justify-content: space-between;
@@ -57,6 +58,7 @@ img{
 	font-weight: 600;
 }
 
+/* change colors */
 #colors{
 	width: 90px;
 	height: 20px;
@@ -238,7 +240,8 @@ img{
 }
 .card__image--hobbies img{
 	height: 380px;
-	
+	object-fit: cover;
+	object-position: center;
 }
 
 .card__text--container{
@@ -251,12 +254,16 @@ img{
 	font-family: monospace;
 	padding: .5em;
 	border-radius: var(--border-radius);
-	color: #115;
+	color: var(--text-color);
 	font-weight: 600;
 }
 .text--hobbies{
 	font-size: .9em;
 	font-family: monospace;
+	background-color: var(--primary-color);
+	padding: .6em .8em;
+	color: #000;
+	border-radius: var(--border-radius);
 }
 
 .card--social h2{
@@ -269,4 +276,34 @@ img{
 }
 .card--social a img{
 	margin-left: .5em;
+}
+
+.card__image--tech{
+	width: 100px;
+	height: 120px;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+}
+.border--color{
+	border: 2px solid var(--primary-color);
+	border-radius: var(--border-radius);
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.border--color p{
+	text-align: center;
+	width: 100%;
+	font-family: monospace;
+	font-size: 2em;
+}
+
+.card__footer{
+	grid-column: 1 / -1;
+}
+.card__footer p{
+	font-size: .7em;
+	text-align: end;
 }

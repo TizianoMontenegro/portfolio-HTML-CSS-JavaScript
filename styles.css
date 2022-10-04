@@ -94,6 +94,11 @@ img{
 .column{
 	display: grid;
 	gap: .8em;
+	align-items: start;
+}
+.column--left{
+	display: grid;
+	grid-template-rows: repeat(4, min-content);
 }
 .column--right{
 	display: grid;
@@ -209,4 +214,59 @@ img{
 }
 .card__tech--icon{
 	width: 30px;
+}
+
+
+.card--hobbies{
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: 400px;
+	grid-column: 1 / -1;
+	padding: 1.5em;
+}
+.card--hobbies img{
+	width: 300px;
+	height: 100%;
+}
+.card__hobbies--right{
+	margin-left: 1em;
+}
+
+.card__image--hobbies{
+	display: block;
+	max-width: 320px;
+}
+.card__image--hobbies img{
+	height: 380px;
+	
+}
+
+.card__text--container{
+	display: flex;
+	justify-content: space-between;
+	width: 210px;
+}
+.card__text--tech{
+	background-color: var(--primary-color);
+	font-family: monospace;
+	padding: .5em;
+	border-radius: var(--border-radius);
+	color: #115;
+	font-weight: 600;
+}
+.text--hobbies{
+	font-size: .9em;
+	font-family: monospace;
+}
+
+.card--social h2{
+	padding-bottom: .5em;
+}
+.card--social a{
+	display: flex;
+	align-items: center;
+	color: var(--primary-color);
+}
+.card--social a img{
+	margin-left: .5em;
 }

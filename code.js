@@ -17,5 +17,8 @@ switches.addEventListener("click",()=>{
 });
 
 colors.addEventListener("click",(e)=>{
-    changeColor.setProperty("--primary-color",e.target.dataset.primarycolor)
+    changeColor.setProperty("--primary-color",e.target.dataset.primarycolor);
 });
+
+const closeWeb = document.querySelector(".close__button");
+closeWeb.addEventListener("click",()=> window.close());
